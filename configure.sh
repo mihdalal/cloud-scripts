@@ -7,7 +7,7 @@ ubuntu_codename=`lsb_release -c -s`
 
 if [ "$ubuntu_codename" = "bionic" ] ; then
     # Ubuntu 18.04
-    NVIDIA_DRIVER=430.26
+    NVIDIA_DRIVER=440.82
 else
     NVIDIA_DRIVER=390.116
 fi
