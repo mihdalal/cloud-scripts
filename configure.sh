@@ -28,12 +28,12 @@ if [ "$ubuntu_codename" = "bionic" ] ; then
 fi
 
 # Install Lubuntu/Xubuntu/anything
-sudo apt-get install -y lubuntu-desktop
+#sudo apt-get install -y lubuntu-desktop
 
 # Installing NVidia driver
-curl -O http://us.download.nvidia.com/XFree86/Linux-x86_64/${NVIDIA_DRIVER}/NVIDIA-Linux-x86_64-${NVIDIA_DRIVER}.run
-chmod +x NVIDIA-Linux-x86_64-${NVIDIA_DRIVER}.run
-sudo ./NVIDIA-Linux-x86_64-${NVIDIA_DRIVER}.run --no-questions --accept-license --no-precompiled-interface --ui=none
+#curl -O http://us.download.nvidia.com/XFree86/Linux-x86_64/${NVIDIA_DRIVER}/NVIDIA-Linux-x86_64-${NVIDIA_DRIVER}.run
+#chmod +x NVIDIA-Linux-x86_64-${NVIDIA_DRIVER}.run
+#sudo ./NVIDIA-Linux-x86_64-${NVIDIA_DRIVER}.run --no-questions --accept-license --no-precompiled-interface --ui=none
 echo ""
 echo "************************************************************************************************"
 echo "*                                                                                              *"
@@ -43,7 +43,7 @@ echo "* This is OK.                                                             
 echo "*                                                                                              *"
 echo "************************************************************************************************"
 echo ""
-rm NVIDIA-Linux-x86_64-${NVIDIA_DRIVER}.run
+#rm NVIDIA-Linux-x86_64-${NVIDIA_DRIVER}.run
 
 # Preparation for virtualgl like in https://virtualgl.org/Documentation/HeadlessNV
 sudo nvidia-xconfig -a --use-display-device=None --virtual=1280x1024
@@ -99,3 +99,4 @@ echo "******************************************************************"
 echo ""
 
 sudo reboot
+
